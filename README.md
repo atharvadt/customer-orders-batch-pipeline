@@ -140,8 +140,8 @@ Requirements:
 Clone the repository:
 
 ```bash
-git clone https://github.com/<your-github-username>/<your-repository-name>.git
-cd <your-repository-name>
+git clone https://github.com/atharvadt/customer-orders-batch-pipeline.git
+cd customer-orders-batch-pipeline
 ```
 
 Create and activate a virtual environment.
