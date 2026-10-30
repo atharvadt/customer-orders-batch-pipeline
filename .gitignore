@@ -1,0 +1,37 @@
+
+# Virtual environments
+.venv/
+venv/
+env/
+Lib/
+Scripts/
+pyvenv.cfg
+
+# Python cache and test cache
+__pycache__/
+*.py[cod]
+.pytest_cache/
+
+# Secrets and editor settings
+.env
+.env.*
+!.env.example
+.vscode/
+.idea/
+
+# Generated benchmark datasets
+data/benchmark/
+data/benchmark_*/
+
+# SQLite databases and temporary outputs
+outputs/*.db
+outputs/*.db-shm
+outputs/*.db-wal
+outputs/conflict_*.csv
+outputs/*.log
+
+# Logs and operating system files
+*.log
+.DS_Store
+Thumbs.db
+

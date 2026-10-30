@@ -1,0 +1,14 @@
+{
+  "seed": 42,
+  "customers_requested": 100,
+  "orders_requested": 500,
+  "intentional_cases": [
+    "negative order amount",
+    "unknown customer reference",
+    "null order_id",
+    "invalid order status",
+    "missing order amount",
+    "exact duplicate order",
+    "null customer_id"
+  ]
+}

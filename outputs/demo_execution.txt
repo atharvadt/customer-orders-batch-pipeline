@@ -1,0 +1,36 @@
+Command: python -m src.pipeline
+Exit code: 0
+
+STDOUT:
+{
+  "run_id": "81fa2985-cee1-41d0-93b8-234d5a8852e2",
+  "status": "success",
+  "customer_input_count": 12,
+  "order_input_count": 41,
+  "customers_loaded": 11,
+  "orders_loaded": 31,
+  "rejected_count": 11,
+  "duplicate_count": 0,
+  "duration_seconds": 0.023712
+}
+Reconciliation:
+{
+  "customers": 11,
+  "orders": 31,
+  "rejected_records": 11,
+  "order_revenue": "70818.63",
+  "orphan_orders": 0
+}
+
+STDERR:
+Spreadsheet runtime warmup failed during python startup
+Traceback (most recent call last):
+  File "/tmp/tmp.QlpUkOUI9D/artifact_tool_v2-2.8.66/artifact_tool/patches/warm_spreadsheet_runtime_on_startup.py", line 26, in warm_spreadsheet_runtime_on_startup
+  File "/tmp/tmp.QlpUkOUI9D/artifact_tool_v2-2.8.66/artifact_tool/spreadsheet_warmup.py", line 785, in warm_spreadsheet_runtime
+  File "/tmp/tmp.QlpUkOUI9D/artifact_tool_v2-2.8.66/artifact_tool/spreadsheet_warmup.py", line 718, in _warm_feature_flows
+  File "/tmp/tmp.QlpUkOUI9D/artifact_tool_v2-2.8.66/artifact_tool/spreadsheet_warmup.py", line 509, in _warm_drawing_and_image_flows
+  File "/tmp/tmp.QlpUkOUI9D/artifact_tool_v2-2.8.66/artifact_tool/generated/interface/models.py", line 32861, in bring_to_front
+  File "/tmp/tmp.QlpUkOUI9D/artifact_tool_v2-2.8.66/artifact_tool/rpc/remote.py", line 764, in __call__
+  File "/tmp/tmp.QlpUkOUI9D/artifact_tool_v2-2.8.66/artifact_tool/rpc/client.py", line 175, in call
+artifact_tool.rpc.client.RemoteError: Element ordering requires an owning element collection.
+2026-10-30 09:28:24,949 INFO run_id=81fa2985-cee1-41d0-93b8-234d5a8852e2 status=success metrics={'run_id': '81fa2985-cee1-41d0-93b8-234d5a8852e2', 'status': 'success', 'customer_input_count': 12, 'order_input_count': 41, 'customers_loaded': 11, 'orders_loaded': 31, 'rejected_count': 11, 'duplicate_count': 0}
